@@ -129,7 +129,10 @@ FileProcessor/
 1. Clone repo (or create project folder):
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/SyedShaheerHussain/Concurrency-FileProcessor-GO-lang
+
+```
+```
 cd FileProcessor
 
 ```
@@ -169,13 +172,17 @@ go build -o fileprocessor main.go
 go run main.go -dir=C:\Windows -workers=4
 
 ```
+```
+go run main.go -dir=C:\Windows -workers=6
 
+```
 # ⚠️ Cautions & Warnings
 
-* The program reads **all files in the directory recursively** — do not point it to extremely large directories without enough RAM.
-* SHA256 hashing can be CPU-intensive for very large files.
-* Autoscaler increases workers dynamically — too many workers can overwhelm CPU.
-* Only **files** are processed, directories are skipped.
+>[!caution]
+> * The program reads **all files in the directory recursively** — do not point it to extremely large directories without enough RAM.
+> * SHA256 hashing can be CPU-intensive for very large files.
+> * Autoscaler increases workers dynamically — too many workers can overwhelm CPU.
+> * Only **files** are processed, directories are skipped.
 
 # ✅ Advantages
 
@@ -230,8 +237,9 @@ Syed Shaheer Hussain © 2026
 
 # ⚖️ Disclaimer
 
-* Use responsibly; scanning system directories may require admin permissions
-* Designed for learning, testing, and real-world file processing scenarios
+>[!warning]
+> * Use responsibly; scanning system directories may require admin permissions
+> * Designed for learning, testing, and real-world file processing scenarios
 
 # ⚡ What This Project Can Do
 
@@ -283,9 +291,10 @@ Syed Shaheer Hussain © 2026
 
 # 🧪 Notes
 
-* Sleep time in `processFile()` simulates CPU-bound work (50ms default)
-* Metrics are printed every 1 second
-* Autoscaler ticks every 2 seconds
+>[!note]
+> * Sleep time in `processFile()` simulates CPU-bound work (50ms default)
+> * Metrics are printed every 1 second
+> * Autoscaler ticks every 2 seconds
 
 # 🏗 How You Made This
 
