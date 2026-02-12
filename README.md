@@ -18,7 +18,7 @@ Syed Shaheer Hussain © 2026
 
 # 📖 Introduction
 
-FileProcessorPro is a **production-ready Go application** that scans directories, calculates SHA256 hashes of files, and processes them concurrently using a **dynamic worker pool**.
+FileProcessor is a **production-ready Go application** that scans directories, calculates SHA256 hashes of files, and processes them concurrently using a **dynamic worker pool**.
 
 It includes:
 
@@ -91,7 +91,7 @@ This project demonstrates **real-world systems programming concepts** in Go.
 # 🏗 Folder Structure
 
 ```
-FileProcessorPro/
+FileProcessor/
 ├── main.go               # Main application
 ├── go.mod                # Go modules file
 
@@ -151,8 +151,8 @@ go run main.go -dir=C:\Users\YourUser\Documents -workers=4
 **Optional build:**
 
 ```bash
-go build -o fileprocessorpro main.go
-./fileprocessorpro -dir=C:\Users\YourUser\Documents -workers=4
+go build -o fileprocessor main.go
+./fileprocessor -dir=C:\Users\YourUser\Documents -workers=4
 
 ```
 
@@ -315,6 +315,6 @@ FileProcessor/
 
 # 📝 Summary
 
-FileProcessorPro is a **real-time, concurrent, scalable file processor** written in Go. It’s suitable for **systems programming, educational purposes, and real-world concurrent file processing**.
+FileProcessor is a **real-time, concurrent, scalable file processor** written in Go. It’s suitable for **systems programming, educational purposes, and real-world concurrent file processing**.
 
 It demonstrates **worker pools, context cancellation, atomic counters, live metrics, autoscaling, SHA256 hashing, and graceful shutdown** in a single project.
